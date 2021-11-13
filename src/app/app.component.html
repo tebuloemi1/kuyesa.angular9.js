@@ -1,0 +1,72 @@
+
+
+
+<form (change)="setvalue($event)">              
+  Top companies that are hiring:
+  <input type="radio" value="one"> css company
+  <input type="radio" value="two"> kaizer co state company
+  <input type="radio" value="three">Manchester corporation ltd
+  <input type="radio" value="another"> pittsburgh glass co
+  ..<input type="reset">
+</form>
+
+
+<div [ngSwitch] ="choose">
+<h3 *ngSwitchCase="'one'"> Angular Developer - Direct Hire
+  eNGINE - Cranberry Township, PA
+  $85,000 - $115,000 a year - Remote (temporarily available, COVID-19)
+  Job Type: Full-time
+
+    Salary: $85,000.00 to $115,000.00 /year
+    
+    Job Type: Full-time
+    
+    Pay: $85,000.00 - $115,000.00 per year
+    
+    Experience:
+    
+    Angular: 1 year (Preferred)
+    Work Location:
+    
+    One location
+    Benefits:
+    
+    Health insurance
+    Dental insurance
+    Vision insurance
+    Visa Sponsorship Potentially Available:
+    
+    No: Not providing sponsorship for this job
+    Schedule:
+    
+    Monday to Friday
+    Work Remotely:
+    
+    Temporarily due to COVID-19
+    26 days agoIf you require alternative methods of application or screening, you must approach the employer directly to request this as Indeed is not responsible for the employer's application process.
+    report job</h3>
+<h3 *ngSwitchCase="'two'"> UI Developer /Angular Developer
+  Impact Consulting Solutions, Inc. - Pittsburgh, PA 15205
+  type:Contract
+
+  Qualifications
+
+Knowledge, Skills and Abilities:
+
+Experience developing web applications using AngularJS and Angular 2/4 - 5/6
+HTML, CSS and Typescript hands-on experience to build UI for web applications
+Experience writing clean, modular, debuggable TypeScript code using external libraries or custom code
+Providing recommendations on using external libraries, as needed
+Strong reactive programming skills and experience with RxJs/Streams
+Experience with the Flux/Redux architectural pattern
+Experience building and consuming JSON-based RESTful APIs
+Strong debugging skills using Chrome Dev Tools
+Experience working with TFS or JIRA
+Experience working with Git
+Experience working in an Agile team environment.
+
+  </h3>
+<h3 *ngSwitchCase="'three'"> third</h3>
+<h3 *ngSwitchCase="'another'"> Another</h3>
+<h3 *ngSwitchDefault>default</h3>
+</div>
